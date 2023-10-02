@@ -1,0 +1,128 @@
+body {
+  background-color: #e6e6e6;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 3rem 5%;
+  color: #39393a;
+}
+
+h2 {
+  color: #592303;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+header img {
+  display: block;
+  margin: 0 auto;
+}
+
+nav {
+  background-color: #333;
+  border-radius: 1rem;
+  padding: 0.5rem 0;
+  margin: 1rem 0;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+/* When smaller than 700px stack the nav links */
+@media (max-width: 700px) {
+  nav ul li {
+    display: block;
+    margin-top: 1rem;
+  }
+}
+
+nav a {
+  color: #ffffff;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #d0604c;
+}
+
+section {
+  display: flex;
+}
+
+section#banner {
+  background-image: url("/images/hairy-day-stylist-highlight.jpg");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+  border-radius: 1rem;
+  color: #ffffff;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+}
+section#banner article div {
+  width: 75%;
+}
+
+/* When screen is smaller than 1200px set banner text to fullwidth */
+@media (max-width: 1200px) {
+  section#banner article div {
+    width: 100%;
+  }
+}
+
+/* When below 700px stack the services/footer flexbox and center footer */
+@media (max-width: 700px) {
+  section#services,
+  footer {
+    flex-direction: column;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
+
+section#services {
+  gap: 1rem 2rem;
+}
+
+section#services article {
+  background-color: #d3a78e;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 0 1rem;
+}
+
+section#services article img {
+  width: 100%;
+}
+
+article {
+  flex: 1;
+}
+
+footer {
+  display: flex;
+  border-top: 2px solid #d3a78e;
+  margin-top: 1rem;
+  padding-top: 2rem;
+}
+
+footer div {
+  flex: 1;
+}
